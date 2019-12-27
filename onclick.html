@@ -2,15 +2,20 @@
     <head>
         <script>
         
-            var func = ()=> 
-            {
-            var d = new date();
+            var value = ()=> 
+           {
+            var d = new Date();
             var sec = d.getSeconds();
-            document.write(sec);
-           }
+            alert(sec%11);
+        }
+
+        var func =()=>
+        {
+            for(var i=0;i<5;i++) value();
+        }
         </script>
     </head>
     <body>
-        <button type = "submit" onclick="func()" style="text-align: center; margin-left: 650px; height: 50px; width :50px; background-color: black;"></button>        
+        <button type = "submit" onclick="func()" style="text-align: center; margin-left: 650px; height: 50px; width :50px; background-color: black; color : white;">Click Me</button>        
     </body>
 </html>
