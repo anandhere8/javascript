@@ -2,7 +2,8 @@ body{
     background-color: brown;
 }
 
-#Clock {
+#Clock 
+{
     color: #cccccc ;
     float: left;
     background-color: black;
@@ -12,5 +13,4 @@ body{
     padding:10px;
     font-size: 100px;
     border-radius: 15px;
-    
 }
