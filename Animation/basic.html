@@ -13,7 +13,7 @@
         var right =()=>
         {    
             ob.style.left = parseInt(ob.style.left) + 10 + 'px';
-         animate = setTimeout(right,20);
+       //     animate = setTimeout(right,20);
         }
 
         var left =()=>
@@ -33,7 +33,7 @@
 </head>
 <body>
     <form action="">
-        <div id="divi" style="background-color: black; height: 150px; width: 150px;"></div><br>
+        <div id="divi" style="background-color: black; height: 150px; width: 150px;" onmousemove="right();"></div><br>
         <input type="button" value="Left Me" onclick="left();">
         <input type="button" value="Right Me" onclick="right();">
         <input type="button" value="Stop" onclick="stop();">
