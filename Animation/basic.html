@@ -3,6 +3,8 @@
     <title>Basic Animation</title>
     <script>    
         var ob = null;
+        //var animate ;
+       // setTimeout(,1000);
         function init() {
             ob = document.getElementById('divi');
             ob.style.position= 'relative'; 
@@ -11,11 +13,18 @@
         var right =()=>
         {    
             ob.style.left = parseInt(ob.style.left) + 10 + 'px';
+         animate = setTimeout(right,20);
         }
 
         var left =()=>
         {
             ob.style.left = parseInt(ob.style.left) - 10 + "px";
+         animate = setTimeout(left,20);
+        }
+
+        var stop = ()=>
+        {
+            clearTimeout(animate);
         }
 
         window.onload = init;
@@ -26,6 +35,7 @@
         <div id="divi" style="background-color: black; height: 150px; width: 150px;"></div><br>
         <input type="button" value="Left Me" onclick="left();">
         <input type="button" value="Right Me" onclick="right();">
+        <input type="button" value="Stop" onclick="stop();">
     </form>
 </body>
 </html>
