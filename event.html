@@ -11,8 +11,10 @@
 </body>
 <script>
     var count = 0;
-    document.getElementById('id').addEventListener('click',()=>{
-        alert("You have clicked");
+    document.getElementById('id').addEventListener('click',(e)=>{
+         var ele = e.target;
+         location.href = '//google.com';
+        console.log(ele);         
     });
 
     
