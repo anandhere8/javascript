@@ -11,7 +11,10 @@
 </body>
 <script> 
 let element = document.createElement('li');
-let text = document.createTextNode('I am text Node');
-element.appendChild(text);
+element.className = "class" ;
+element.id = "id";
+element.setAttribute('title','mytitle');
+
+console.log(element);
 </script>
 </html>
