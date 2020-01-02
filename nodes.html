@@ -7,14 +7,34 @@
     <title>Document</title>
 </head>
 <body>
-    
+    <h3>This is just an example.</h3>
+    <ul>
+        <li> This</li>
+        <li> is </li>
+        <li> a</li>
+        <li> list</li>
+    </ul>
 </body>
 <script> 
-let element = document.createElement('li');
-element.className = "class" ;
-element.id = "id";
-element.setAttribute('title','mytitle');
 
-console.log(element);
+let element = document.createElement('li');
+let tnode = document.createTextNode(' This is another method');
+element.appendChild(tnode);
+element.id = 'myid';
+element.className = 'myclass';
+element.setAttribute('title','mytitle');
+element.innerText = 'This is appended text';
+let ul = document.querySelector('ul');
+ul.appendChild(element);
+
+let p = element.hasAttribute('title');
+
+console.log(p);
+
+p = element.getAttribute('title');
+
+console.log(p);
+
+
 </script>
 </html>
