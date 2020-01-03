@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <h4> Local and session storage.</h4>
+</body>
+<script>
+    localStorage.setItem('Name','Anand');
+    localStorage.setItem('Name2','Arun');
+    let arr = ["Anand","kumar","Amit","Kumar"];
+    localStorage.setItem('Name3',JSON.stringify(arr));
+    let name = localStorage.getItem('Name3')
+    name = JSON.parse(name);
+    console.log(name);
+</script>
+</html>
