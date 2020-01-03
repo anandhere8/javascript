@@ -16,6 +16,15 @@
     localStorage.setItem('Name3',JSON.stringify(arr));
     let name = localStorage.getItem('Name3')
     name = JSON.parse(name);
+
     console.log(name);
+  
+    sessionStorage.setItem('sName','Anand');
+    sessionStorage.setItem('sName2','Arun');
+    let sarr = ["Anand","kumar","Amit","Kumar"];
+    sessionStorage.setItem('sName3',JSON.stringify(sarr));
+    let sname = sessionStorage.getItem('sName3')
+    sname = JSON.parse(sname);
+    console.log(sname);
 </script>
 </html>
