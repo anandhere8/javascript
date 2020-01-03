@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+        <h3 id="Head">This is exercise.</h3>
+</body>
+<script>
+    let back = document.getElementById('Head');
+    var func = ()=> {
+            let string = document.getElementById("ip").value;
+          //  console.log(string);
+            let para = document.createElement('h4');
+            para.setAttribute('id','Head');
+            para.innerText = string ;
+            let field = document.getElementById('ip');
+            field.replaceWith(para);
+        };
+
+    back.addEventListener('click',(e)=>{
+
+        
+        let field = document.createElement('input');
+        field.setAttribute('type','text');
+        field.setAttribute('id','ip');
+        field.setAttribute('onchange','func();');
+        // back.appendChild(field) ;
+        // console.log(field);
+        //back.innerHTML = "<input type = 'text'> </input> ";
+        back.replaceWith(field);
+
+        console.log(field);
+    });
+
+</script>
+</html>
