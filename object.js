@@ -1,7 +1,7 @@
 let car = {
     name : 'Maruti' ,
     topSpeeed : 200,
-    run : function(){
+    run : ()=>{
         console.log(`Car is running`);
     }
 }
