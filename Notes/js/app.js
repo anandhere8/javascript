@@ -30,19 +30,20 @@ var showNotes = () => {
     noteobj.forEach(function (element, index) {
    
         html += `
-        <div class="noteCard my-2 mx-2 card" style="width: 18rem;">
+            <div class="noteCard my-2 mx-2 card" style="width: 18rem;">
 
             <div class="card-body">
-                <h5 class="card-title">${index+1} Note</h5>
+                <h5 class="card-title">Note ${index+1}</h5>
                 <p class="card-text">${element} </p>
-                <button class="btn btn-primary">Delete Note</button>
+                <button href="#" class="btn btn-primary">Delete Note</button>
             </div>
-        </div>
+            </div>
+
                 `                
 });
-    let noteele = document.getElementById('notes');
-    if(notes.length == 0)
-    noteele.innerText = html;
+    let noteEle = document.getElementById('notes');
+    if(notes.length != 0)
+    noteEle.innerText = html;
         
 }
 
