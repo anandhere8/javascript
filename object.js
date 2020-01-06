@@ -19,4 +19,4 @@ this.run = function(){
 car1 = new generalCar('Anand',190);
 car1 = new generalCar('Amit',150);
 car2 = new generalCar('Gajju',199);
-console.log(car2.run());
+console.log(car2.name);
