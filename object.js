@@ -18,4 +18,5 @@ this.run = function(){
 
 car1 = new generalCar('Anand',190);
 car1 = new generalCar('Amit',150);
-console.log(car1.run());
+car2 = new generalCar('Gajju',199);
+console.log(car2.run());
